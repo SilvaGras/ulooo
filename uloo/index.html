@@ -1,19 +1,27 @@
+<?php
+// Load the YAML settings file
+$settings = yaml_parse_file('game-settings.yaml');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Classic Snake Game</title>
+    <title>Breakout Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="game-container">
-        <h1>Classic Snake Game</h1>
-        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <h1>Breakout Game</h1>
+        <canvas id="gameCanvas" width="800" height="500"></canvas>
         <p>Score: <span id="score">0</span></p>
         <button id="restartBtn" onclick="startGame()">Restart Game</button>
     </div>
 
+    <script>
+        const gameSettings = <?php echo json_encode($settings); ?>;
+    </script>
     <script src="game.js"></script>
 </body>
 </html>
