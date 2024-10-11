@@ -1,0 +1,20 @@
+game:
+  ball:
+    speed: 5
+    radius: 10
+  paddle:
+    width: 75
+    height: 10
+    speed: 7
+  bricks:
+    rows: 5
+    columns: 8
+    width: 70
+    height: 20
+    padding: 10
+    offsetTop: 30
+    offsetLeft: 35
+  colors:
+    ball: '#0095DD'
+    paddle: '#0095DD'
+    bricks: '#0095DD'
