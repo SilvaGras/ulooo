@@ -18,11 +18,11 @@ body, html {
 }
 
 h1 {
-    color: #333;
+    color: #222;
 }
 
 canvas {
-    border: 2px solid #333;
+    border: 2px solid #222;
     background-color: #f5f5f5;
     margin: 10px 0;
 }
